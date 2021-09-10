@@ -10,8 +10,25 @@
         <p>
             This week, I learned relearned things about CSS stylings that I had
             recently forgotten about and more recently learned about box modeling.
-            
-
+            For instance, I learned about the alternation of boxes in a way that would
+            make a chess or checker board pattern. At first, I thought that there was no 
+            way to loop code in CSS, but I was gravely mistaken. After a quick google search, 
+            I learned of the nth-child function from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child" target="_blank">this website</a>
+            and I figured this was the way to alternate each block's color. I soon realized that 
+            this method would require an inner alternation as well. So I tried this sample code:
+        </p>
+        <section>
+            <pre>
+                tr:nth-child(odd)> td:nth-child(odd) {
+                    background-color:white;
+                }
+            </pre>
+        </section>
+        <p>
+            I did this for the rest of the possibilities and it made the checkerboard pattern.
+            Doing that, I was able to complete the table with just copying and pasting rather than
+            trying to alternate the class elements manually. After this, I learned about the manipulation
+            of box models. 
         </p>
     </body>
 </html>
