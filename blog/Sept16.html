@@ -24,11 +24,27 @@
 
     <body>
         <p>
-            
+            This week, I learned how to host and link together two URLs that 
+            you intend to use together. If that sentence was not clear, I basically
+            learned how to link a URL to a sub-URL. I know that this was a project
+            early in the class, but I didn't actually link the URL to the blog.site
+            correctly, instead of the link being to, in my case "blog.miguelcodessometimes.me"
+            I was just directing the user to the directory from the main site, so the URL
+            would never show the "blog." section. I was confused about it, but I read something
+            <a href="https://www.digitalocean.com/community/questions/adding-a-subdomain-on-apache2">Here</a>,
+            and I figured that the sub-domain was working, but I still had the same issue. Then I compared my
+            main site "miguelcodessometimes.me" to my blog "blog.miguelcodessometimes.me" and it turns out that
+            they are different because links that I had clicked on previously were still blue instead of purple,
+            so I linked them together in the html like this:
         </p>
+        
+        <pre>
+            &lt;a href="http://blog.miguelcodessometimes.me/."&gt;Click here to see the blog!&lt;/a&gt;
+        </pre>
 
         <p>
-
+            I don't know if I was just being dumb here or if there is another way to do this, but I feel like I am 
+            on the right track here.
         </p>
     </body>
 </html>
