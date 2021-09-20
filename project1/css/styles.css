@@ -59,7 +59,7 @@ footer {
     margin-top: 20px;
     margin-right: 50px;
     margin-bottom: 20px;
-    min-height: 700px;
+    min-height: 500px;
 }
 .main > h2 {
     padding-top: 20px;
@@ -77,14 +77,13 @@ footer {
     display: flex;
     flex-direction: row;
     overflow-y: auto;
-    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     object-fit: cover;
 }
 .galleryCont > img {
     flex-grow: 1;
-    max-width: 100%;
-    max-height: auto;
+    height: 200px;
+    object-fit: cover;
     margin: 2px;
 }
