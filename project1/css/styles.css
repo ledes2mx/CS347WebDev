@@ -83,7 +83,7 @@ footer {
 }
 .galleryCont > img {
     flex-grow: 1;
-    height: 200px;
+    max-width: 225px;
     object-fit: cover;
     margin: 2px;
 }
