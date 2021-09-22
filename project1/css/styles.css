@@ -15,7 +15,7 @@ h3, h4 {
 
 .lone-gallery > a {
     text-decoration: none;
-    color:#fb24ff
+    color:#DCB823
 }
 
 .contentContainer {
@@ -57,7 +57,7 @@ h3, h4 {
     list-style-type: none;
     padding: 8px;
     margin: 0;
-    background-color: #28ff24;
+    background-color: #2347DC;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -66,7 +66,7 @@ h3, h4 {
 }
 
 .navigation > a {
-    color: #fb24ff;
+    color: #DCB823;
     padding: 12px;
     display: inline-block;
     font-size: x-large;
@@ -75,7 +75,7 @@ h3, h4 {
     font-weight: bold;
 }
 .navigation > a:hover {
-    background-color: #00f8ff;
+    background-color: #DC23A4;
     width:max-content;
 }
 .footLayout {
@@ -90,7 +90,8 @@ h3, h4 {
 }
 
 footer {
-    background-color:#28ff24;
+    background-color:#2347DC;
+    color: #DCB823;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 10px;
@@ -110,7 +111,7 @@ footer {
 }
 .main > h2 {
     padding-top: 20px;
-    border-top:solid 3px #fb24ff;
+    border-top:solid 3px #DCB823;
 }
 .hours {
     font-family:Arial, Helvetica, sans-serif;
@@ -118,7 +119,7 @@ footer {
     font-weight: bold;
     text-align: left;
     padding-left: 30px;
-    border-bottom: solid 3px #fb24ff;
+    border-bottom: solid 3px #DCB823;
 }
 .galleryCont {
     display: flex;
