@@ -28,7 +28,7 @@ h3, h4 {
     position: relative;
     animation-name: move-piggy;
     animation-timing-function: ease-in;
-    animation-duration: 6s;
+    animation-duration: 4s;
 }
 
 @keyframes move-piggy {
