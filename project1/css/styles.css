@@ -42,7 +42,8 @@ nav {
 }
 
 .navigation > a:hover {
-  background-color: #DC23A4;;  
+  background-color: #DC23A4;
+  
 }
 
 #burgerButton {
@@ -50,11 +51,10 @@ nav {
 }
 
 @media (max-width: 600px) {
-  #burgerButton {
+    #burgerButton {
     display: inline;
-  }
-
-  header {
+    }
+    header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -64,25 +64,25 @@ nav {
     padding: 10px;
     position: sticky;
     top: 0;
-  }
-  h2 {
-      display: none;
-  }
-
-  nav {
+    }
+    .piggy {
+        display: none;
+    }
+    h2 {
+        display: none;
+    }
+    nav {
     display: none;
-  }
-
-  nav.open {
+    }
+    nav.open {
     display: block;
     position: absolute;
     top: 100%;
     right: 0;
-  }
-
-  .navigations {
+    }
+    .navigations {
     flex-direction: column;
-  }
+    }
 }
 
 .piggy {
@@ -168,7 +168,7 @@ footer {
 .topFooter {
   font-style: italic;
   font-weight: bold;
-  min-height: 100px;;
+  min-height: 200px;;
   width: 95%;
   position: absolute;
   top: 20px;
@@ -176,14 +176,14 @@ footer {
 }
 .hours {
   position: absolute;
-  font-size: x-large;
+  font-size: large;
   top: 0;
   left: 0;
 }
 .external-links {
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 0;
+  right: 50px;
 }
 .actual-links {
   display: inline-block;
