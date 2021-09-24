@@ -6,7 +6,6 @@
         <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
         <link rel="shortcut icon" href="images/favicon.jpg">
         <link rel="stylesheet" href="css/styles2.css">
-        <script type="text/javascript" src="js/button.js"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
 
@@ -30,9 +29,9 @@
               </svg>
         </header>
 
-        <section>
-            <h2 class="piggy"><img src="images/littlePig.jpg" width="200" height="219" alt="animated pig"></h2>
-        </section>
+        <div>
+            <h1 class="piggy"><img src="images/littlePig.jpg" width="200" height="219" alt="animated pig"></h1>
+        </div>
 
         <main class="main">
             <h2>When you eat with us, you'll eat like a pig!</h2>
@@ -79,4 +78,14 @@
             <p class="copyright">&copy; All rights reserved</p>
         </footer>
     </body>
+    <script type="text/javascript" src="js/button.js">
+        const navlinks = document.getElementsByTagName('nav')[0];
+        const hamburgerButton = document.getElementById('burgerButton');
+
+        function toggleNavlinks() {
+        navlinks.classList.toggle('open'); 
+        }
+
+        hamburgerButton.addEventListener('click', toggleNavlinks);
+    </script>
 </html>
