@@ -6,6 +6,24 @@
         <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Menu</title>
+        <style>
+            .main {
+                font-family: Georgia, serif;
+                font-size: small;
+                line-height: 1.75em;
+            }
+            .main > h2 {
+                font-size: medium;
+            }
+            dt {
+                font-weight: bold;
+                color: #2347DC;
+            }
+            p {
+                font: 1.25em Georgia, sans-serif;
+                font-style: italic;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -19,7 +37,6 @@
                 </ul>
             </nav>
             <h1>El Cochinito</h1>
-            <h2>Mexican Restaurant</h2>
             <svg id="burgerButton" viewBox="0 0 100 80" width="90" height="30">
                 <rect fill="#DCB823" width="100" height="15"></rect>
                 <rect fill="#DCB823" y="30" width="100" height="15"></rect>
@@ -28,15 +45,123 @@
         </header>
 
         <main class="main">
-            <h1>This is the menu page</h1>
-            <h1>Nothing Here</h1>
-            <h1>Still Nothing...</h1>
-            <h1>Coming Soon!</h1>
-            <h1>Don't Worry</h1>
-            <h1>There will be</h1>
-            <h1>something here</h1>
-            <h1>pretty soon...</h1>
-            <h1>I hope...</h1>
+            <div class="tacos">
+                <h2>Tacos</h2>
+                <p>Tacos come multiple varieties, all garnishes are optional or can be added.</p>
+                <dl>
+                    <dt>Tacos de Asada</dt>
+                    <dd>Grilled beef steak.</dd>
+                    <dd>Garnishes include finely diced onions and cilantro</dd>
+                    <dt>Tacos al Pastor</dt>
+                    <dd>Pork marinated.</dd>
+                    <dd>Garnishes include finely diced onions, cilantro, and pineapple.</dd>
+                    <dt>Tacos de Canasta</dt>
+                    <dd>Choose any of the three fillings: chicharron, potato, or beans.</dd>
+                    <dd>No garnishes are included.</dd>
+                    <dt>Tacos de Carnitas</dt>
+                    <dd>Braized Pork, comes with many parts of the pig including the hock, belly, rinds, ribs, loin, leg, ect.</dd>
+                    <dd>Garnishes include pickled jalapenos, thinly sliced carrots, and sauteed onions.</dd>
+                    <dt>Cochinita Pibil</dt>
+                    <dd>Underground roasted pig.</dd>
+                    <dd>Garnish includes pickled red onions.</dd>
+                    <dd>Garnishes include cilantro, pickled red onoins,</dd>
+                    <dt>Seafood Tacos</dt>
+                    <dd>Seafood tacos can either be catfish or shrimp. Either protein is fried.</dd>
+                    <dd>Garnishes include red cabbage, cilantro, and avocado.</dd>
+                    <dt>Tacos de Suadero</dt>
+                    <dd>Fried beef cuts.</dd>
+                    <dd>Garnishes include finely diced onions and cilantro.</dd>
+                    <dt>Tacos de Birria</dt>
+                    <dd>Roated marinated goat</dd>
+                    <dd>Garnishes include cilantro and finely diced onions.</dd>
+                    <dt>Tacos de Barbacoa</dt>
+                    <dd>Roasted marinated lamb.</dd>
+                    <dd>Garnishes include cilantro and finely diced onions.</dd>
+
+                </dl>
+            </div>
+            <div class="tortas">
+                <h2>Tortas</h2>
+                <p>Tortas come in multiple varieties, all garnishes are optional. Bread is sourdough.</p>
+                <dl>
+                    <dt>Torta de Carne Asada</dt>
+                    <dd>Grilled beef steak.</dd>
+                    <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and mayonnaise.</dd>
+                    <dt>Torta de Chorizo</dt>
+                    <dd>Chorizo and beans.</dd>
+                    <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and sour cream.</dd>
+                    <dt>Torta de Milanesa</dt>
+                    <dd>Breaded steak.</dd>
+                    <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and sour cream.</dd>
+                    <dt>Torta de Jamon</dt>
+                    <dd>Ham or Turkey. Can either come warm or cold.</dd>
+                    <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and mayonnaise.</dd>
+                    <dt>Torta de Pollo</dt>
+                    <dd>Chicken braized in tomato sauce.</dd>
+                    <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and sour cream.</dd>
+                </dl>
+            </div>
+            <div class="entrees">
+                <h2>Entrees</h2>
+                <p>Entrees are NOT tacos, you may ask for tortillas on the side. All additional items are optional.</p>
+                <dl>
+                    <dt>Enchiladas</dt>
+                    <dd>Enchiladas can be red, green, or mole poblano.</dd>
+                    <dd>Comes with either lettuce or cabbage, sour cream, crumbling cheese, and avocado.</dd>
+                    <dt>Huarache</dt>
+                    <dd>Sliced flank steak.</dd>
+                    <dd>Comes with either lettuce or cabbage, sour cream, crumbling cheese, and avocado.</dd>
+                    <dt>Pozole</dt>
+                    <dd>Pork and hominy soup.</dd>
+                    <dd>Comes with cabbage, raddish, and tostadas.</dd>
+                    <dt>Tamales</dt>
+                    <dd>Either red pork tamales or green chicken tamales.</dd>
+                    <dd>Comes with sour cream, crumbling cheese, and either lettuce or cabbage.</dd>
+                </dl>
+
+            </div>
+            <div class="vegitarian">
+                <h2>Vegitarian Options</h2>
+                <p>All additional items are optional.</p>
+                <dl>
+                    <dt>Vegitarian Tacos</dt>
+                    <dd>Rice and beans.</dd>
+                    <dd>Comes with lettuce, cheese, tomato, sour cream, and avocado.</dd>
+                    <dt>Vegitarian Torta</dt>
+                    <dd>Rice, beans, and cheese.</dd>
+                    <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and mayonnaise.</dd>
+                    <dt>Quesadilla</dt>
+                    <dd>Tortilla grilled cheese. Cheese is Oaxacan cheese.</dd>
+                </dl>
+            </div>
+            <div class="drinks">
+                <h2>Drinks</h2>
+                <dl>
+                    <dt>Water</dt>
+                    <dt>Coca Cola</dt>
+                    <dt>Sprite</dt>
+                    <dt>Pepsi</dt>
+                    <dt>Fanta</dt>
+                    <dt>Horchata</dt>
+                    <dt>Agua de Jamaica</dt>
+                    <dt>Chocolate de Abuelita</dt>
+                </dl>
+                <h3>Alcoholic Drinks</h3>
+                <dl>
+                    <dt>Margarita</dt>
+                    <dt>Corona</dt>
+                    <dt>Modelo</dt>
+                    <dt>Tequila</dt>
+                    <dt>Michelada</dt>
+                    <dt>Paloma</dt>
+                </dl>
+            </div>
+            <div class="pastries">
+                <h2>Pastries</h2>
+                <dl>
+                    <dt>Pan Dulce</dt>
+                </dl>
+            </div>
         </main>
 
         <footer>

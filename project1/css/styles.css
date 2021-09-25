@@ -68,7 +68,7 @@ nav {
     .piggy {
         display: none;
     }
-    h2 {
+    header > h2 {
         display: none;
     }
     nav {
