@@ -11,6 +11,10 @@
                 font-family: Georgia, serif;
                 font-size: small;
                 line-height: 1.75em;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
             }
             .main > h2 {
                 font-size: medium;
@@ -19,9 +23,21 @@
                 font-weight: bold;
                 color: #2347DC;
             }
-            .main > p {
+            .tacos > p, .tortas > p, .entrees > p, .vegitarian > p{
                 font: 1.25em Georgia, sans-serif;
                 font-style: italic;
+            }
+            .tacos, .tortas, .entrees, .vegitarian, .drinks, .pastries {
+                width: 300px;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .price{
+                font-family: Georgia, serif;
+                font-style: italic;
+                color: #DCB823;
             }
         </style>
     </head>
@@ -44,37 +60,41 @@
             </svg>
         </header>
 
+        <div>
+            <h1>Menu</h1>
+        </div>
+
         <main class="main">
             <div class="tacos">
                 <h2>Tacos</h2>
                 <p>Tacos come multiple varieties, all garnishes are optional or can be added.</p>
                 <dl>
-                    <dt>Tacos de Asada</dt>
+                    <dt>Tacos de Asada <span class="price">$1.25 each</span></dt>
                     <dd>Grilled beef steak.</dd>
                     <dd>Garnishes include finely diced onions and cilantro</dd>
-                    <dt>Tacos al Pastor</dt>
+                    <dt>Tacos al Pastor <span class="price">$1.25 each</span></dt>
                     <dd>Pork marinated.</dd>
                     <dd>Garnishes include finely diced onions, cilantro, and pineapple.</dd>
-                    <dt>Tacos de Canasta</dt>
+                    <dt>Tacos de Canasta <span class="price">$0.70 each</span></dt>
                     <dd>Choose any of the three fillings: chicharron, potato, or beans.</dd>
                     <dd>No garnishes are included.</dd>
-                    <dt>Tacos de Carnitas</dt>
+                    <dt>Tacos de Carnitas <span class="price">$1.50 each</span></dt>
                     <dd>Braized Pork, comes with many parts of the pig including the hock, belly, rinds, ribs, loin, leg, ect.</dd>
                     <dd>Garnishes include pickled jalapenos, thinly sliced carrots, and sauteed onions.</dd>
-                    <dt>Cochinita Pibil</dt>
+                    <dt>Cochinita Pibil <span class="price">$2.50 each</span></dt>
                     <dd>Underground roasted pig.</dd>
                     <dd>Garnish includes pickled red onions.</dd>
                     <dd>Garnishes include cilantro, pickled red onoins,</dd>
-                    <dt>Seafood Tacos</dt>
+                    <dt>Seafood Tacos <span class="price">$1.25 each</span></dt>
                     <dd>Seafood tacos can either be catfish or shrimp. Either protein is fried.</dd>
                     <dd>Garnishes include red cabbage, cilantro, and avocado.</dd>
-                    <dt>Tacos de Suadero</dt>
+                    <dt>Tacos de Suadero <span class="price">$1.50 each</span></dt>
                     <dd>Fried beef cuts.</dd>
                     <dd>Garnishes include finely diced onions and cilantro.</dd>
-                    <dt>Tacos de Birria</dt>
+                    <dt>Tacos de Birria <span class="price">$1.50 each</span></dt>
                     <dd>Roated marinated goat</dd>
                     <dd>Garnishes include cilantro and finely diced onions.</dd>
-                    <dt>Tacos de Barbacoa</dt>
+                    <dt>Tacos de Barbacoa <span class="price">$1.50 each</span></dt>
                     <dd>Roasted marinated lamb.</dd>
                     <dd>Garnishes include cilantro and finely diced onions.</dd>
 
@@ -84,19 +104,19 @@
                 <h2>Tortas</h2>
                 <p>Tortas come in multiple varieties, all garnishes are optional. Bread is sourdough.</p>
                 <dl>
-                    <dt>Torta de Carne Asada</dt>
+                    <dt>Torta de Carne Asada <span class="price">$7.50 each</span></dt>
                     <dd>Grilled beef steak.</dd>
                     <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and mayonnaise.</dd>
-                    <dt>Torta de Chorizo</dt>
+                    <dt>Torta de Chorizo <span class="price">$6.00 each</span></dt>
                     <dd>Chorizo and beans.</dd>
                     <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and sour cream.</dd>
-                    <dt>Torta de Milanesa</dt>
+                    <dt>Torta de Milanesa <span class="price">$7.00 each</span></dt>
                     <dd>Breaded steak.</dd>
                     <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and sour cream.</dd>
-                    <dt>Torta de Jamon</dt>
-                    <dd>Ham or Turkey. Can either come warm or cold.</dd>
+                    <dt>Torta de Jamon <span class="price">$5.50 each</span></dt>
+                    <dd>Ham or Turkey. Can either come hot or cold.</dd>
                     <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and mayonnaise.</dd>
-                    <dt>Torta de Pollo</dt>
+                    <dt>Torta de Pollo <span class="price">$6.50 each</span></dt>
                     <dd>Chicken braized in tomato sauce.</dd>
                     <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and sour cream.</dd>
                 </dl>
@@ -105,16 +125,16 @@
                 <h2>Entrees</h2>
                 <p>Entrees are NOT tacos, you may ask for tortillas on the side. All additional items are optional.</p>
                 <dl>
-                    <dt>Enchiladas</dt>
+                    <dt>Enchiladas <span class="price">$1.50 each</span></dt>
                     <dd>Enchiladas can be red, green, or mole poblano.</dd>
                     <dd>Comes with either lettuce or cabbage, sour cream, crumbling cheese, and avocado.</dd>
-                    <dt>Huarache</dt>
+                    <dt>Huarache <span class="price">$7.00 each</span></dt>
                     <dd>Sliced flank steak.</dd>
                     <dd>Comes with either lettuce or cabbage, sour cream, crumbling cheese, and avocado.</dd>
-                    <dt>Pozole</dt>
+                    <dt>Pozole <span class="price">$6.00 each</span></dt>
                     <dd>Pork and hominy soup.</dd>
                     <dd>Comes with cabbage, raddish, and tostadas.</dd>
-                    <dt>Tamales</dt>
+                    <dt>Tamales <span class="price">$1.75 each</span></dt>
                     <dd>Either red pork tamales or green chicken tamales.</dd>
                     <dd>Comes with sour cream, crumbling cheese, and either lettuce or cabbage.</dd>
                 </dl>
@@ -124,42 +144,42 @@
                 <h2>Vegitarian Options</h2>
                 <p>All additional items are optional.</p>
                 <dl>
-                    <dt>Vegitarian Tacos</dt>
+                    <dt>Vegitarian Tacos <span class="price">$1.00 each</span></dt>
                     <dd>Rice and beans.</dd>
                     <dd>Comes with lettuce, cheese, tomato, sour cream, and avocado.</dd>
-                    <dt>Vegitarian Torta</dt>
+                    <dt>Vegitarian Torta <span class="price">$5.00 each</span></dt>
                     <dd>Rice, beans, and cheese.</dd>
                     <dd>Served with lettuce, tomato, avocado, pickled jalapeno, and mayonnaise.</dd>
-                    <dt>Quesadilla</dt>
+                    <dt>Quesadilla <span class="price">$0.75 each</span></dt>
                     <dd>Tortilla grilled cheese. Cheese is Oaxacan cheese.</dd>
                 </dl>
             </div>
             <div class="drinks">
                 <h2>Drinks</h2>
                 <dl>
-                    <dt>Water</dt>
-                    <dt>Coca Cola</dt>
-                    <dt>Sprite</dt>
-                    <dt>Pepsi</dt>
-                    <dt>Fanta</dt>
-                    <dt>Horchata</dt>
-                    <dt>Agua de Jamaica</dt>
-                    <dt>Chocolate de Abuelita</dt>
+                    <dt>Water <span class="price">Free</span></dt>
+                    <dt>Coca Cola <span class="price">$1.25 each</span></dt>
+                    <dt>Sprite <span class="price">$1.25 each</span></dt>
+                    <dt>Pepsi <span class="price">$1.25 each</span></dt>
+                    <dt>Fanta <span class="price">$1.25 each</span></dt>
+                    <dt>Horchata <span class="price">$1.75 each</span></dt>
+                    <dt>Agua de Jamaica <span class="price">$1.50 each</span></dt>
+                    <dt>Chocolate de Abuelita <span class="price">$1.25 each</span></dt>
                 </dl>
                 <h3>Alcoholic Drinks</h3>
                 <dl>
-                    <dt>Margarita</dt>
-                    <dt>Corona</dt>
-                    <dt>Modelo</dt>
-                    <dt>Tequila</dt>
-                    <dt>Michelada</dt>
-                    <dt>Paloma</dt>
+                    <dt>Margarita <span class="price">$7.25 each</span></dt>
+                    <dt>Corona <span class="price">$7.50 each</span></dt>
+                    <dt>Modelo <span class="price">$7.50 each</span></dt>
+                    <dt>Tequila <span class="price">$7.25 each</span></dt>
+                    <dt>Michelada <span class="price">$7.50 each</span></dt>
+                    <dt>Paloma <span class="price">$7.50 each</span></dt>
                 </dl>
             </div>
             <div class="pastries">
                 <h2>Pastries</h2>
                 <dl>
-                    <dt>Pan Dulce</dt>
+                    <dt>Pan Dulce <span class="price">$0.60 each</span></dt>
                 </dl>
             </div>
         </main>
