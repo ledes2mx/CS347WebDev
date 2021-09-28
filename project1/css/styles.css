@@ -65,9 +65,11 @@ nav {
     position: sticky;
     top: 0;
     }
+    /*
     .piggy {
         display: none;
     }
+    */
     header > h2 {
         display: none;
     }
@@ -91,6 +93,7 @@ nav {
   animation-name: move-piggy;
   animation-timing-function: ease-in;
   animation-duration: 4s;
+  z-index: -1;
 }
 
 @keyframes move-piggy {

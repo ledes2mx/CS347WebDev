@@ -6,6 +6,36 @@
         <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>About Us</title>
+        <style>
+            .producer-list {
+                border-top: solid 3px #DCB823;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .producers {
+                padding: 0;
+                list-style-type: none;
+                color: #2347DC;
+                font-weight: bold;
+            }
+            .produce {
+                margin-bottom: 20px;
+            }
+            .location {
+                font-family: Georgia, serif;
+                font-style: italic;
+                color: #DCB823;
+                font-weight:100;
+            }
+            .team {
+                border-top:solid 3px #DCB823;
+            }
+            div {
+                margin-bottom: 30px;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -28,15 +58,39 @@
         </header>
 
         <main class="main">
-            <h1>This is the about us page</h1>
-            <h1>Nothing Here</h1>
-            <h1>Still Nothing...</h1>
-            <h1>Coming Soon!</h1>
-            <h1>Don't Worry</h1>
-            <h1>There will be</h1>
-            <h1>something here</h1>
-            <h1>pretty soon...</h1>
-            <h1>I hope...</h1>
+            <div class="information">
+            <h1>About Us</h1>
+            <p>We strive for perfection in our food and with our team. 
+            That is why we aquire our meats and produce from the best there is. 
+            When possible, we aquire our produce from local businesses to display
+            the rich flavors of Virginia to all, from the people that live here 
+            locally or the ocasional visitors that pass through Harrisonburg.
+            </p>
+
+            </div>
+            <div class="producer-list">
+                <h3>Local Produce</h3>
+                <ul class="producers">
+                    <li class="produce">Autumn Olive Farms - <span class="location">Waynesboro, VA</span></li>
+                    <li class="produce">Buffalo Creek Farm - <span class="location">Lexington, VA</span></li>
+                    <li class="produce">Mt. Crawford Creamery - <span class="location">Mount Crawford, VA</span></li>
+                    <li class="produce">Season's Bounty - <span class="location">Harrisonburg, VA</span></li>
+                    <li class="produce">Brooklyn Hills Ranch - <span class="location">Amherst, VA</span></li>
+                    <li class="produce">Wildwood Gardens - <span class="location">Stanley, VA</span></li>
+                    <li class="produce">DL Shipp Farm - <span class="location">Broadway, VA</span></li>
+                </ul>
+            </div>
+            <div class="team">
+                <h2>Our Team</h2>
+                <p>Our team is dedicated to bringing you the best and highest 
+                    quality produce cooked in the highest and traditional way 
+                    possible. We know that good cooking comes from the heart,
+                    so our staff is trained together to be able to answer any
+                    questions you may have about our food or the process in which
+                    we make our food with. That is why we choose to buy locally,
+                    to bring the best of Virginia's agriculture to your bellies.
+                </p>
+            </div>
         </main>
 
         <footer>
