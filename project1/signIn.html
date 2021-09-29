@@ -6,6 +6,52 @@
         <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Sign in</title>
+        <style>
+            h3 {
+                text-align: center;
+            }
+            .sign-in-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            label {
+                font-size: xx-large;
+                color:#2347DC;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            input {
+                font-size: xx-large;
+                font-family:Arial, Helvetica, sans-serif;
+                border-color: #DCB823;
+                border-radius: 30px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            input:focus{
+                border:solid 4px #DC23A4;
+            }
+            .buttons {
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            button {
+                font-size:xx-large;
+                border-color:#DCB823;
+                background-color:#2347DC;
+                color:#DCB823;
+                padding: 10px;
+                border: 0;
+                border-radius: 30px;
+                margin: 10px;
+            }
+            button:hover {
+                border: solid 3px #0b2cad;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -28,15 +74,19 @@
         </header>
 
         <main class="main">
-            <h1>This is the sign in page</h1>
-            <h1>Nothing Here</h1>
-            <h1>Still Nothing...</h1>
-            <h1>Coming Soon!</h1>
-            <h1>Don't Worry</h1>
-            <h1>There will be</h1>
-            <h1>something here</h1>
-            <h1>pretty soon...</h1>
-            <h1>I hope...</h1>
+            <h3>Want to put your order in faster? Sign in to make it more convenient for you!</h3>
+            <div class="sign-in-container">
+                <div><label for="sign-in">Username</label></div>
+                <div><h3><input id="sign-in" type="text"></h3></div>
+                <div><label for="password">Password</label></div>
+                <div><h3><input id="password" type="password"></h3></div>
+                <h3>Don't have an account? Sign up!</h3>
+                <div class="butons">
+                    <button>Sign Up</button>
+                    <button>Sign In</button>
+                </div>
+            </div>
+            
         </main>
 
         <footer>
