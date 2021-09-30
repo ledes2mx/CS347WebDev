@@ -4,42 +4,9 @@
         <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
         <link rel="shortcut icon" href="images/favicon.jpg">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/menu.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Menu</title>
-        <style>
-            .main {
-                font-family: Georgia, serif;
-                font-size: small;
-                line-height: 1.75em;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: flex-start;
-            }
-            .main > h2 {
-                font-size: medium;
-            }
-            dt {
-                font-weight: bold;
-                color: #2347DC;
-            }
-            .tacos > p, .tortas > p, .entrees > p, .vegitarian > p{
-                font: 1.25em Georgia, sans-serif;
-                font-style: italic;
-            }
-            .tacos, .tortas, .entrees, .vegitarian, .drinks, .pastries {
-                width: 300px;
-                margin-left: 30px;
-                margin-right: 30px;
-                margin-top: 50px;
-                margin-bottom: 50px;
-            }
-            .price{
-                font-family: Georgia, serif;
-                font-style: italic;
-                color: #DCB823;
-            }
-        </style>
     </head>
     <body>
         <header>
@@ -209,16 +176,6 @@
             </div>
             <p class="copyright">&copy; All rights reserved</p>
         </footer>
-    </body>
-    <script type="text/javascript" src="js/button.js">
-        const navlinks = document.getElementsByTagName('nav')[0];
-        const hamburgerButton = document.getElementById('burgerButton');
-
-        function toggleNavlinks() {
-        navlinks.classList.toggle('open'); 
-        }
-
-        hamburgerButton.addEventListener('click', toggleNavlinks);
-    </script>
+        <script src="js/button.js"></script>
     </body>
 </html>

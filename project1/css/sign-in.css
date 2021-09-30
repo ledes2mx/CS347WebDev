@@ -1,0 +1,45 @@
+.info {
+    text-align: center;
+}
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    font-size: xx-large;
+    color:#2347DC;
+    font-family:Arial, Helvetica, sans-serif;
+}
+input {
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    border-color: #DCB823;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+input:focus{
+    border:solid 4px #DC23A4;
+}
+.buttons {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+button {
+    font-size:xx-large;
+    border-color:#DCB823;
+    background-color:#2347DC;
+    color:#DCB823;
+    padding: 10px;
+    border: 0;
+    border-radius: 30px;
+    margin: 10px;
+}
+button:hover {
+    border: solid 3px #0b2cad;
+}

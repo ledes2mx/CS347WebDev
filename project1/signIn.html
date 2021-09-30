@@ -4,54 +4,9 @@
         <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
         <link rel="shortcut icon" href="images/favicon.jpg">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/sign-in.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Sign in</title>
-        <style>
-            .info {
-                text-align: center;
-            }
-            .sign-in-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            label {
-                font-size: xx-large;
-                color:#2347DC;
-                font-family:Arial, Helvetica, sans-serif;
-            }
-            input {
-                font-size: large;
-                font-family:Arial, Helvetica, sans-serif;
-                border-color: #DCB823;
-                border-radius: 30px;
-                text-align: center;
-                margin-bottom: 50px;
-            }
-            input:focus{
-                border:solid 4px #DC23A4;
-            }
-            .buttons {
-                display:flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: flex-start;
-            }
-            button {
-                font-size:xx-large;
-                border-color:#DCB823;
-                background-color:#2347DC;
-                color:#DCB823;
-                padding: 10px;
-                border: 0;
-                border-radius: 30px;
-                margin: 10px;
-            }
-            button:hover {
-                border: solid 3px #0b2cad;
-            }
-        </style>
     </head>
     <body>
         <header>
@@ -77,9 +32,9 @@
             <h3 class="info">Want to put your order in faster? Sign in to make it more convenient for you!</h3>
             <div class="sign-in-container">
                 <div><label for="sign-in">Username</label></div>
-                <div><h3 class="info"><input id="sign-in" type="text"></h3></div>
+                <div><input id="sign-in" type="text" placeholder="Username"></div>
                 <div><label for="password">Password</label></div>
-                <div><h3 class="info"><input id="password" type="password"></h3></div>
+                <div><input id="password" type="password" placeholder="Password"></div>
                 <h3 class="info">Don't have an account? Sign up!</h3>
                 <div class="butons">
                     <button>Sign Up</button>
@@ -111,16 +66,6 @@
             </div>
             <p class="copyright">&copy; All rights reserved</p>
         </footer>
-    </body>
-    <script type="text/javascript" src="js/button.js">
-        const navlinks = document.getElementsByTagName('nav')[0];
-        const hamburgerButton = document.getElementById('burgerButton');
-
-        function toggleNavlinks() {
-        navlinks.classList.toggle('open'); 
-        }
-
-        hamburgerButton.addEventListener('click', toggleNavlinks);
-    </script>
+        <script src="js/button.js"></script>
     </body>
 </html>

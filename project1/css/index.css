@@ -1,0 +1,9 @@
+.about-us-info, .sample-menu {
+    border-top: solid 3px #DCB823;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.about-link > a {
+    color:#DCB823;
+    text-decoration: none;
+}

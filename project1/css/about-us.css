@@ -1,0 +1,25 @@
+.producer-list {
+    border-top: solid 3px #DCB823;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.producers {
+    padding: 0;
+    list-style-type: none;
+    color: #2347DC;
+    font-weight: bold;
+}
+.produce {
+    margin-bottom: 20px;
+}
+.location {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #DCB823;
+    font-weight:100;
+}
+.team {
+    border-top:solid 3px #DCB823;
+}

@@ -6,18 +6,9 @@
         <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
         <link rel="shortcut icon" href="images/favicon.jpg">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/index.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <style>
-            .about-us-info, .sample-menu {
-                border-top: solid 3px #DCB823;
-                margin-bottom: 20px;
-                margin-top: 20px;
-            }
-            .about-link > a {
-                color:#DCB823;
-                text-decoration: none;
-            }
-        </style>
+
     </head>
 
     <body>
@@ -95,15 +86,6 @@
             </div>
             <p class="copyright">&copy; All rights reserved</p>
         </footer>
+        <script src="js/button.js"></script>
     </body>
-    <script type="text/javascript" src="js/button.js">
-        const navlinks = document.getElementsByTagName('nav')[0];
-        const hamburgerButton = document.getElementById('burgerButton');
-
-        function toggleNavlinks() {
-        navlinks.classList.toggle('open'); 
-        }
-
-        hamburgerButton.addEventListener('click', toggleNavlinks);
-    </script>
 </html>

@@ -1,0 +1,32 @@
+.main {
+    font-family: Georgia, serif;
+    font-size: small;
+    line-height: 1.75em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main > h2 {
+    font-size: medium;
+}
+dt {
+    font-weight: bold;
+    color: #2347DC;
+}
+.tacos > p, .tortas > p, .entrees > p, .vegitarian > p{
+    font: 1.25em Georgia, sans-serif;
+    font-style: italic;
+}
+.tacos, .tortas, .entrees, .vegitarian, .drinks, .pastries {
+    width: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.price{
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #DCB823;
+}
