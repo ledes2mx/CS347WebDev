@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog 2 October, 2021</title>
+    </head>
+    <body>
+        <h1>14 of October, 2021</h1>
+        <p>
+            I know that this is just a little thing about javascript that I didn't know about, but I just found it interesting that the date at the top or bottom of some
+            web pages that have that thing that says "Last modified : " and then the last modification date sits right next to it actually is javascript and not just a
+            hard coded date in HTML. So I learned of this because I was looking through other websites a while ago, and I just figured that those were nothing special,
+            but in another class, we talked about the date of last modification when checking how old a document or article was, and I, out of interest, wanted to know if
+            there was an easy way to not change the date of last modification every time you update your page, so I googled the last modification date in html and once again,
+            <a href="https://www.w3schools.com/jsref/prop_doc_lastmodified.asp" target="_blank">W3Schools</a> comes to the rescue with the syntax "document.lastModified."
+            So I put it in a document like this...
+        </p>
+        <pre>
+            &lt;p&gt;Last modified:
+                &lt;script type="text/javascript"&gt;
+                    document.write(document.lastModified);
+                &lt;/script&gt;
+            &lt;/p&gt;
+        </pre>
+        <p>
+            This unfortunately doesn't look too good since it comes up with the date and time. To break it up,
+            I did a little more research and came up with this instead...
+        </p>
+        <pre>
+            &lt;script type="text/javascript"&gt;
+                var update = new Date(document.lastModified);
+                var modMonth = update.getMonth() + 1;
+                var modDate = update.getDate();
+                var modYear = update.getFullYear();
+                document.write("Last updated: " + modMonth + "/" + modDate + "/" + modYear);
+            &lt;/script&gt;
+        </pre>
+        <p>I'll show both of these examples below!</p>
+
+        <section>
+            <p>Last Modified first example: 
+                <script type="text/javascript">
+                    document.write(document.lastModified);
+                </script>
+            </p>
+        </section>
+
+        <section>
+            <p>
+                <script type="text/javascript">
+                    var update = new Date(document.lastModified);
+                    var modMonth = update.getMonth() + 1;
+                    var modDate = update.getDate();
+                    var modYear = update.getFullYear();
+                    document.write("Last Modified second example: " + modMonth + "/" + modDate + "/" + modYear);
+                </script>
+            </p>
+        </section>
+    </body>
+</html>
