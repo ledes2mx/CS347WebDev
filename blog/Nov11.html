@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog 11 November, 2021</title>
+        <script src="jquery.js"></script>
+        <style type="text/css">
+            section {
+                background-color: #77ac80;
+                font-size: 200%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>11 of November, 2021</h1>
+
+        <p>
+            I know we won't be talking about anything else other than react this semester,
+            but I just wanted to look into jquery and what that had to offer just out of interest.
+            It turns out there are a bunch of weird things that you can do with this.
+            For example, there is a toggle effect that you can use if you ever need to toggle
+            something for whatever reason. For example, take the little section below I have made,
+            the button at the bottom gets the whole section to collapse on itself when pressed, and
+            expands when pressed again.
+        </p>
+
+        <script>
+            $(document).ready(function() {
+                //$("p").text("The DOM is now loaded - you're ready to go!");
+                $("#thirdp").text("The DOM is now loaded - you're ready to go!");
+                $("button").click(function() {
+                    $("section").slideToggle();
+                });
+            });
+            </script>
+
+        <section>
+            <p>The DOM hasn't finished loading yet</p>
+            <p>Not yet</p>
+            <p id="thirdp"> Still not ready</p>
+        </section>
+
+        <button>Toggle between slide up and slide down for all paragraphs</button>
+
+        <p>
+            This is just one of the features of jquery that I have looked into at the moment, but I feel that
+            there is much more that I haven't seen yet. I am not sure as to the use of this other than just
+            having these functions available so that it makes doing stuff like this easier, but I will probably
+            look into it more. It's also written in an incredibly weird way... that's probably something to look
+            into as well.¯\_(ツ)_/¯ The code to do this is below.
+        </p>
+        <pre>
+            $(document).ready(function() {
+                //$("p").text("The DOM is now loaded - you're ready to go!");
+                $("#thirdp").text("The DOM is now loaded - you're ready to go!");
+                $("button").click(function() {
+                    $("section").slideToggle();
+                });
+            });
+        </pre>
+
+    </body>
+</html>
