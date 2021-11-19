@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog 18 November, 2021</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/pepper-grinder/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+
+        <script>
+            $(document).ready(function() {
+                $("#tabs").tabs();
+            });
+        </script>
+    </head>
+    <body>
+        <p>
+            This week, I decided to look a little more into jQuery. I know that there is probably another way to have tabs that bring up different things related to topics, but I
+            find that sometimes, jQuery just has this stuff laying there, and it might be useful to use if you really want to use it. What I mean by tabs is literally having tabs
+            with just words in there or probably something else in there, but having them appear when the tab is active. This actually isn't that difficult to do either, as it
+            turns out. All you really need to do in you jQuery script is...
+        </p>
+        <pre>
+            $(document).ready(function() {
+                $("#tabs").tabs();
+            });
+        </pre>
+        <p>
+            In your body, you have to have a div with the id, in this case "tabs" is the id, and in an unordered list you have to have an anchor linking them to divs that have ids
+            like in the example below.
+        </p>
+        <pre>
+            &lt;div id="tabs"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt; &lt;a href="#tab1"&gt; Tab 1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt; &lt;a href="#tab2"&gt; Tab 2&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;div id="tab1"&gt;
+                &lt;p&gt;This is the first tab!&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div id="tab2"&gt;
+                &lt;p&gt;This is the second tab!&lt;/p&gt;
+            &lt;/div&gt;
+
+        </pre>
+        <p>
+            As you can see below, you can clearly click on each tab to see what each of them has inside of them.
+        </p>
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#tab1">Tab 1</a></li>
+                <li><a href="#tab2">Tab 2</a></li>
+            </ul>
+
+            <div id="tab1">
+                <p>This is the first tab!</p>
+            </div>
+
+            <div id="tab2">
+                <p>This is the second tab!</p>
+            </div>
+        </div>
+
+        <p>
+            You also can't 
+        </p>
+    </body>
+</html>
